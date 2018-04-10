@@ -15,6 +15,7 @@ from .apis.bk_login import CollectionsBkLogin
 from .apis.cc import CollectionsCC
 from .apis.cmsi import CollectionsCMSI
 from .apis.job import CollectionsJOB
+from .apis.idc import CollectionsIdc
 
 
 # Available components
@@ -23,4 +24,6 @@ AVAILABLE_COLLECTIONS = {
     'cc': CollectionsCC,
     'cmsi': CollectionsCMSI,
     'job': CollectionsJOB,
+    # IDC Nagios get host
+    'idc': CollectionsIdc
 }

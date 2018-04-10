@@ -30,10 +30,10 @@ from django.conf.global_settings import *  # noqa
 # 应用基本信息配置 (请按照说明修改)
 # ==============================================================================
 # 在蓝鲸智云开发者中心 -> 点击应用ID -> 基本信息 中获取 APP_ID 和 APP_TOKEN 的值
-APP_ID = ''
-APP_TOKEN = ''
+APP_ID = 'nagios'
+APP_TOKEN = 'ff8255c5-a2e7-4378-a5b5-a91b1fa0ca0e'
 # 蓝鲸智云开发者中心的域名，形如：http://paas.bking.com
-BK_PAAS_HOST = ''
+BK_PAAS_HOST = 'http://bkpaas.aac.com:80'
 
 # 是否启用celery任务
 IS_USE_CELERY = True
@@ -113,10 +113,14 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     # OTHER 3rd Party App
+    # 'debug_toolbar',
     'app_control',
     'account',
     'home_application',
+    'nagios',
 )
+
+DEBUG = True
 
 # ==============================================================================
 # Django 项目配置
@@ -322,3 +326,9 @@ LOGGING = {
         },
     }
 }
+# NAGIOS API KEY
+API_KEY = 'ODnqHhHGTkETCu37bjfnWYh5Eo6IE75oJLSH2PjcqWl2rn8FJGiVFDhfhmdVsijs'
+# # REQUESTS
+# connection_timeout= 30,  # 链接超时为时间为30s
+# connection_retries= 3,  # 链接重试次数为3次
+# connection_pool= 10,  # 链接池个数为10
