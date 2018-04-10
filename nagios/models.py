@@ -17,7 +17,7 @@ class Host(models.Model):
     config_type = models.CharField(max_length=60)
     alias = models.CharField(max_length=60)
     display_name = models.CharField(max_length=60)
-    address = models.CharField(u'IP地址', max_length=60,unique=True)
+    address = models.CharField(u'IP地址', max_length=60)
     check_interval = models.CharField(max_length=60)
     retry_interval = models.CharField(max_length=60)
     max_check_attempts = models.CharField(max_length=60)
@@ -39,3 +39,4 @@ class Host(models.Model):
     class Meta:
         verbose_name = u'Nagios主机'
         verbose_name_plural = u"Nagios主机"
+        unique_together = ('host_name', 'address')

@@ -15,12 +15,12 @@ class FetchNagios(object):
         account_list = models.Host.objects.all()
         for obj in account_list:
             data = {
-                'instance_id': None or str(obj.instance_id),
-                'host_name': None or str(obj.host_name),
-                'is_active': None or str(obj.is_active),
-                'config_type': None or str(obj.config_type),
-                'alias': None or str(obj.alias),
-                'display_name': None or str(obj.display_name),
+                'instance_id': None or str(obj.instance_id.encode('utf8')),
+                'host_name': None or str(obj.host_name.encode('utf8')),
+                'is_active': None or str(obj.is_active.encode('utf8')),
+                'config_type': None or str(obj.config_type.encode('utf8')),
+                'alias': None or str(obj.alias.encode('utf8')),
+                'display_name': None or str(obj.display_name.encode('utf8')),
                 'address': None or str(obj.address),
                 'check_interval': None or str(obj.check_interval),
                 'retry_interval': None or str(obj.retry_interval),

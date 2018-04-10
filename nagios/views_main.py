@@ -40,7 +40,7 @@ class Nagios(object):
             return 'nagios get host api failed!'
 
     def get_host_with_nagios(self):
-        url = 'http://10.160.148.38/nagiosxi/api/v1/objects/host/'
+        url = 'http://10.177.181.44/nagiosxi/api/v1/objects/host/'
         params = {
             'apikey': API_KEY,
         }
@@ -49,37 +49,40 @@ class Nagios(object):
         print r.text
         print r.json()
         if r.status_code == 200:
-            # models.Host.objects.all().delete()
-            # host_list=[]
+            models.Host.objects.all().delete()
+            host_list=[]
+            data = r.json()['hostlist']['host']
+            for i in data:
+                host_list.append(models.Host(
+                    # pk=data.index(i),
+                    instance_id=i['instance_id'],
+                    host_name=i['host_name'],
+                    is_active=i['is_active'],
+                    config_type=i['config_type'],
+                    alias=i['alias'],
+                    display_name=i['display_name'],
+                    address=i['address'],
+                    check_interval=i['check_interval'],
+                    retry_interval=i['retry_interval'],
+                    max_check_attempts=i['max_check_attempts'],
+                    first_notification_delay=i['first_notification_delay'],
+                    notification_interval=i['notification_interval'],
+                    passive_checks_enabled=i['passive_checks_enabled'],
+                    active_checks_enabled=i['active_checks_enabled'],
+                    notifications_enabled=i['notifications_enabled'],
+                    notes=i['notes'],
+                    notes_url=i['notes_url'],
+                    action_url=i['action_url'],
+                    icon_image=i['icon_image'],
+                    icon_image_alt=i['icon_image_alt'],
+                    statusmap_image=i['statusmap_image'],
+                ))
+            print host_list
+            models.Host.objects.bulk_create(host_list)
             # for i in r.json()['hostlist']['host']:
-            #     host_list.append(models.Host(
-            #         instance_id=i['instance_id'],
-            #         host_name=i['host_name'],
-            #         is_active=i['is_active'],
-            #         config_type=i['config_type'],
-            #         alias=i['alias'],
-            #         display_name=i['display_name'],
-            #         address=i['address'],
-            #         check_interval=i['check_interval'],
-            #         retry_interval=i['retry_interval'],
-            #         max_check_attempts=i['max_check_attempts'],
-            #         first_notification_delay=i['first_notification_delay'],
-            #         notification_interval=i['notification_interval'],
-            #         passive_checks_enabled=i['passive_checks_enabled'],
-            #         active_checks_enabled=i['active_checks_enabled'],
-            #         notifications_enabled=i['notifications_enabled'],
-            #         notes=i['notes'],
-            #         notes_url=i['notes_url'],
-            #         action_url=i['action_url'],
-            #         icon_image=i['icon_image'],
-            #         icon_image_alt=i['icon_image_alt'],
-            #         statusmap_image=i['statusmap_image'],
-            #     ))
-            # models.Host.objects.bulk_create(r.json()['hostlist']['host'])
-            for i in r.json()['hostlist']['host']:
-                print i
-                i.pop('@attributes')
-                models.Host.objects.update_or_create(address=i['address'], defaults=i)
+            #     print i
+            #     i.pop('@attributes')
+            #     models.Host.objects.update_or_create(address=i['address'], defaults=i)
             return 200
         else:
             print 'nagios get host api failed!'
@@ -99,10 +102,10 @@ class Nagios(object):
             'notification_period': params['notification_period'],
             'applyconfig': 1
         }
-        print data
+        # print data
         r = requests.post(url=url, data=data)
-        print r.text
-        print r.json()
+        # print r.text
+        # print r.json()
         return r.json()
 
     def del_host_with_nagios(self, params):
@@ -112,8 +115,8 @@ class Nagios(object):
             'host_name': params['host_name'],
             'applyconfig': 1
         }
-        print url,data
+        # print url,data
         r = requests.delete(url=url)
-        print r.text
-        print r.json()
+        # print r.text
+        # print r.json()
         return r.json()
