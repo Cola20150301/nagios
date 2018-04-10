@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="208d3144-1b07-43cc-8fa0-27c2bceefdd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/nagios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/nagios/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/default.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nagios/views_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/nagios/views_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +55,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nagios/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="558">
               <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="e#24#95#0" expanded="true" />
@@ -71,17 +72,51 @@
       <file leaf-file-name="views_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nagios/views_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+            <state relative-caret-position="407">
+              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+              <folding>
+                <element signature="e#156#177#0" expanded="true" />
+                <element signature="e#366#1135#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/default.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="329" column="14" selection-start-line="329" selection-start-column="14" selection-end-line="329" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nagios/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
               <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fetch_nagios.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nagios/fetch_nagios.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nagios/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#695#727#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,15 +154,15 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/nagios/111.py" />
         <option value="$PROJECT_DIR$/nagios/http.py" />
-        <option value="$PROJECT_DIR$/nagios/fetch_nagios.py" />
         <option value="$PROJECT_DIR$/blueking/component/apis/idc.py" />
         <option value="$PROJECT_DIR$/blueking/component/collections.py" />
         <option value="$PROJECT_DIR$/nagios/urls.py" />
-        <option value="$PROJECT_DIR$/conf/default.py" />
         <option value="$PROJECT_DIR$/nagios/views.py" />
         <option value="$PROJECT_DIR$/templates/nagios/home.html" />
-        <option value="$PROJECT_DIR$/nagios/views_main.py" />
         <option value="$PROJECT_DIR$/nagios/models.py" />
+        <option value="$PROJECT_DIR$/nagios/fetch_nagios.py" />
+        <option value="$PROJECT_DIR$/nagios/views_main.py" />
+        <option value="$PROJECT_DIR$/conf/default.py" />
       </list>
     </option>
   </component>
@@ -159,6 +194,22 @@
             <path>
               <item name="nagios" type="b2602c69:ProjectViewProjectNode" />
               <item name="nagios" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nagios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nagios" type="462c0819:PsiDirectoryNode" />
+              <item name="nagios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nagios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nagios" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nagios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nagios" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="nagios" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -257,7 +308,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523327459146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nagios v1.0">
+      <created>1523329007979</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329007979</updated>
+    </task>
+    <task id="LOCAL-00003" summary="nagios v1.0">
+      <created>1523329062127</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329062127</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -278,9 +343,9 @@
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49928367" weight="0.31300813" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.45725915" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.3649932" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18194842" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.21438263" />
+      <window_info anchor="bottom" id="Terminal" order="5" visible="true" weight="0.062415197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23065902" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.18481375" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -350,6 +415,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <folding>
+            <element signature="e#156#177#0" expanded="true" />
+            <element signature="e#366#1135#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -559,40 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nagios/fetch_nagios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="333" column="34" lean-forward="true" selection-start-line="333" selection-start-column="34" selection-end-line="333" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nagios/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="e#695#727#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nagios/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#24#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/nagios/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -607,17 +642,55 @@
     <entry file="file://$PROJECT_DIR$/common/log.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nagios/views_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nagios/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nagios/fetch_nagios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nagios/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#695#727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nagios/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nagios/views_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#156#177#0" expanded="true" />
+            <element signature="e#366#1135#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="329" column="14" selection-start-line="329" selection-start-column="14" selection-end-line="329" selection-end-column="14" />
         </state>
       </provider>
     </entry>

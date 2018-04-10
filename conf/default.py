@@ -327,7 +327,8 @@ LOGGING = {
     }
 }
 # NAGIOS API KEY
-API_KEY = 'ODnqHhHGTkETCu37bjfnWYh5Eo6IE75oJLSH2PjcqWl2rn8FJGiVFDhfhmdVsijs'
+NAGIOS_URL = '10.177.181.44'
+NAGIOS_API_KEY = 'ODnqHhHGTkETCu37bjfnWYh5Eo6IE75oJLSH2PjcqWl2rn8FJGiVFDhfhmdVsijs'
 # # REQUESTS
 # connection_timeout= 30,  # 链接超时为时间为30s
 # connection_retries= 3,  # 链接重试次数为3次

@@ -8,7 +8,7 @@
 
 
 import requests, json
-from settings import APP_ID, APP_TOKEN, BK_PAAS_HOST, API_KEY
+from settings import APP_ID, APP_TOKEN, BK_PAAS_HOST, NAGIOS_URL, NAGIOS_API_KEY
 import models
 
 
@@ -40,9 +40,9 @@ class Nagios(object):
             return 'nagios get host api failed!'
 
     def get_host_with_nagios(self):
-        url = 'http://10.177.181.44/nagiosxi/api/v1/objects/host/'
+        url = 'http://%s/nagiosxi/api/v1/objects/host/' % (NAGIOS_URL)
         params = {
-            'apikey': API_KEY,
+            'apikey': NAGIOS_API_KEY,
         }
 
         r = requests.get(url=url, params=params)
@@ -50,7 +50,7 @@ class Nagios(object):
         print r.json()
         if r.status_code == 200:
             models.Host.objects.all().delete()
-            host_list=[]
+            host_list = []
             data = r.json()['hostlist']['host']
             for i in data:
                 host_list.append(models.Host(
@@ -91,7 +91,7 @@ class Nagios(object):
     def add_host_with_nagios(self, params):
         print params
 
-        url = 'http://10.177.181.44/nagiosxi/api/v1/config/host?apikey=%s' % API_KEY
+        url = 'http://%s/nagiosxi/api/v1/config/host?apikey=%s' % (NAGIOS_URL, NAGIOS_API_KEY)
         data = {
             'host_name': params['host_name'],
             'address': params['address'],
@@ -109,12 +109,9 @@ class Nagios(object):
         return r.json()
 
     def del_host_with_nagios(self, params):
-        url = 'http://10.177.181.44/nagiosxi/api/v1/config/host?apikey=%s&host_name=%s&applyconfig=1' % (
-        API_KEY, params['host_name'])
-        data = {
-            'host_name': params['host_name'],
-            'applyconfig': 1
-        }
+        url = 'http://%s/nagiosxi/api/v1/config/host?apikey=%s&host_name=%s&applyconfig=1' % (
+        NAGIOS_URL, NAGIOS_API_KEY, params['host_name'])
+
         # print url,data
         r = requests.delete(url=url)
         # print r.text
